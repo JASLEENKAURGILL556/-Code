@@ -1,0 +1,9 @@
+from tkinter import *
+#intialize the tkinter lib
+root=Tk()
+# Label is created using Lable(intialize_variable,text="text to show")
+my_label=Label(root,text="Hello,World")
+# pack function to create window as much as text size
+my_label.pack()
+# the make window work (root function)
+root.mainloop()
