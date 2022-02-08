@@ -1,3 +1,3 @@
 # -Code
- These are question given in various companies .
- These question bulid strong base and good command on Dsa
+ In This repo will show to basic code of python using tkinter lib.
+ This module is used for creating GUI in python.
