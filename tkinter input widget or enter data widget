@@ -1,0 +1,23 @@
+from tkinter import *
+# initalize tkinter
+root=Tk()
+# creating input box
+# width to inc width of box
+# borderwidth inc 
+enter=Entry(root,width=50,borderwidth=5)
+enter.pack()
+# insert function to display text in entry box
+# parameter of insert function are is index no , text
+# but to enter text you need to delete text already shown
+enter.insert(1,"enter name here!")
+# function to be attached to button
+def myclick():
+    # variable of enter box . get function to get the data entered (or to use the data entered)
+    name="Hello "+enter.get()
+    # here variable name is passed to text argument in label function
+    my_label=Label(root,text=name)
+    my_label.pack()
+# button widget is created using Button created
+mybutton=Button(root,text="click me",command=myclick,padx=50)
+mybutton.pack()
+root.mainloop()
