@@ -1,0 +1,17 @@
+from tkinter import *
+#intialize the tkinter 
+root=Tk()
+#creating function to attach button
+def myclick():
+    #label is created
+    my_label=Label(root,text="you clicked the button")
+    my_label.pack()
+#button widget is created 
+# command keyword to attack function to button
+# fg keyword to change text colour and bg for backgroud colour of button 
+# padx keyword the increase length of button 
+# pady keyword to increase width of button
+mybutton=Button(root,text="click me",command=myclick,fg="yellow",bg="red",padx=50)
+mybutton.pack()
+#pack function to display text in centre of window
+root.mainloop()
