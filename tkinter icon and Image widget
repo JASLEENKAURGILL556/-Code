@@ -1,0 +1,19 @@
+from tkinter import *
+from PIL import ImageTk,Image
+# intalize of tkinter
+root=Tk()
+# title to change the name of file displayed on display bar
+root.title("Gill.co Image viewer")
+# iconbitmap to change the icon of top left corner on diplay bar
+root.iconbitmap("images\portrait.png")
+
+# ImageTk.PhotoImage function to show image from pillow lib
+# image.open to open image file in window
+imgs=ImageTk.PhotoImage(Image.open("images\olivia.png"))
+
+#label to show image
+label=Label(image=imgs).pack()
+# button with exit function name .quit
+button=Button(root,text="Exit program",command=root.quit).pack()
+
+root.mainloop()
